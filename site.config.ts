@@ -2,19 +2,19 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '78fc5a4b88d74b0e824e29407e9f1ec1',
+  rootNotionPageId: 'a7999bfe8486420d8b08b73d8866872b',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
-  rootNotionSpaceId: 'fde5ac74eea345278f004482710e1af3',
+  rootNotionSpaceId: '',
 
   // basic site info (required)
-  name: 'Transitive Bullshit',
-  domain: 'transitivebullsh.it',
-  author: 'Travis Fischer',
+  name: 'Vedanth Bora',
+  domain: '',
+  author: 'Vedanth Bora',
 
   // open graph metadata (optional)
-  description: 'Personal site of Travis Fischer aka Transitive Bullshit',
+  description: 'Personal site of Vedanth Bora',
 
   // social usernames (optional)
   twitter: 'transitive_bs',
@@ -25,8 +25,8 @@ export default siteConfig({
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
-  defaultPageIcon: 'https://transitivebullsh.it/page-icon.png',
-  defaultPageCover: 'https://transitivebullsh.it/page-cover.jpg',
+  defaultPageIcon: '',
+  defaultPageCover: '',
   defaultPageCoverPosition: 0.5,
 
   // whether or not to enable support for LQIP preview images (optional)
@@ -35,7 +35,7 @@ export default siteConfig({
   // whether or not redis is enabled for caching generated preview images (optional)
   // NOTE: if you enable redis, you need to set the `REDIS_HOST` and `REDIS_PASSWORD`
   // environment variables. see the readme for more info
-  isRedisEnabled: true,
+  isRedisEnabled: false,
 
   // map of notion page IDs to URL paths (optional)
   // any pages defined here will override their default URL paths
@@ -57,11 +57,19 @@ export default siteConfig({
   navigationLinks: [
     {
       title: 'About',
-      pageId: '8d0062776d0c4afca96eb1ace93a7538'
+      pageId: '7628b4d4c76d4bc7aee8c60f3f2fa034'
+    },
+    {
+      title: 'Projects',
+      pageId: '02c1fc7ada034450864d4ddb406fb956'
+    },
+    {
+      title: 'Blogs',
+      pageId: 'a200d6ca03154f499290f0039d98ff1b'
     },
     {
       title: 'Contact',
-      pageId: '9a7ddf2973444067bbc5ce0a4e0e0058'
+      pageId: '709e2e92dfb24121878657711d55f349'
     }
   ]
 })
